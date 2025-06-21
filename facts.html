@@ -2,55 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SoulSpeak - Your Info</title>
+  <title>SoulSpeak - Mental Health Facts</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f3f4f6;
-      color: #1f2937;
+      background: #e0f2fe;
+      color: #1e293b;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       padding: 20px;
+    }
+
+    header {
       text-align: center;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
       color: #2563eb;
-      margin-bottom: 10px;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      width: 100%;
-      max-width: 400px;
+    .fact-box {
       background: white;
-      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 25px;
+      margin: 15px 0;
+      max-width: 700px;
+      width: 100%;
+      text-align: left;
     }
 
-    input {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      font-size: 1em;
+    .fact-box strong {
+      color: #1d4ed8;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
     }
 
     button {
       background-color: #2563eb;
       color: white;
-      padding: 12px 25px;
+      padding: 12px 24px;
       font-size: 1em;
       border: none;
       border-radius: 8px;
@@ -59,29 +60,39 @@
     }
 
     button:hover {
-      background-color: #1e40af;
+      background-color: #1e3a8a;
     }
 
     a {
-      margin-top: 15px;
-      color: #6b7280;
       text-decoration: none;
-      font-size: 0.9em;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Tell Us About You</h1>
-  <form action="facts.html" method="GET">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="number" name="age" placeholder="Your Age" required>
-    <button type="submit">Continue</button>
-  </form>
-  <a href="index.html">Back to Home</a>
+  <header>
+    <h1>Did You Know?</h1>
+    <p>Understanding mental health helps us support ourselves and others better.</p>
+  </header>
+
+  <div class="fact-box">
+    <strong>1 in 5</strong> adults in the U.S. experience mental illness each year.
+  </div>
+  <div class="fact-box">
+    <strong>60%</strong> of people with mental health issues don't seek help due to stigma or lack of access.
+  </div>
+  <div class="fact-box">
+    Talking to someone, even briefly, can reduce stress by up to <strong>40%</strong>.
+  </div>
+  <div class="fact-box">
+    People facing discrimination or isolation are <strong>3x more likely</strong> to experience anxiety or depression.
+  </div>
+  <div class="fact-box">
+    You're not alone. <strong>SoulSpeak</strong> exists because your voice matters.
+  </div>
+
+  <div class="buttons">
+    <a href="payment.html"><button>Continue</button></a>
+    <a href="form.html"><button>Back</button></a>
+  </div>
 </body>
 </html>
