@@ -1,79 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>You Are Heard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #f0f4ff, #dbeafe);
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0e7ff, #f0f4ff);
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background: #1e40af;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
     }
-    header {
-      padding: 40px 20px;
-      background-color: #1e3a8a;
-      color: white;
-    }
+
     h1 {
-      font-size: 2.5em;
+      margin: 0;
+      font-size: 2.8em;
     }
+
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 700px;
       margin: 20px auto;
-      max-width: 600px;
+      text-align: center;
     }
+
     .button {
       background-color: #2563eb;
       color: white;
-      padding: 14px 28px;
+      padding: 14px 30px;
       border: none;
       border-radius: 8px;
       font-size: 1em;
+      margin: 20px auto;
       cursor: pointer;
-      margin-top: 20px;
+      transition: background 0.3s ease;
     }
-    footer {
+
+    .button:hover {
+      background-color: #1e3a8a;
+    }
+
+    .qr-section {
       margin-top: 40px;
+      text-align: center;
+    }
+
+    .qr-section img {
+      border-radius: 12px;
+      margin-top: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
       font-size: 0.9em;
-      color: #666;
-      padding-bottom: 30px;
+      color: #6b7280;
+      background-color: #f1f5f9;
+      width: 100%;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>You Are Heard</h1>
-  <p>Do you often get ignored? Judged? Struggling to find someone who listens without judging?</p>
-  <p>You’re not alone — and you’re not invisible here.</p>
-</header>
+  <header>
+    <h1>You Are Heard</h1>
+    <p>Do you often get ignored? Judged? Struggling to find someone who listens without judging?</p>
+    <p>You’re not alone — and you’re not invisible here.</p>
+  </header>
 
-<main>
-  <p>This is a place where your thoughts are safe.<br>
-  You can speak freely. No judgment. No pressure.</p>
-  
-  <p><strong>Text, call, or video — I’m here to listen.</strong></p>
-  
-  <a href="https://wa.me/9779763266618" target="_blank">
-  <button class="button">Talk to Me Now on WhatsApp</button>
-</a>
+  <main>
+    <p>This is a place where your thoughts are safe.<br>
+    You can speak freely. No judgment. No pressure.</p>
 
-<<h2>Support Me</h2>
-<p>If you'd like to support me for my time, scan the QR code below to send directly via bank transfer:</p>
+    <p><strong>Text, call, or video — I’m here to listen.</strong></p>
 
-<img src="9f91d7d9-facb-4f76-83ff-5e43a4a67cc3.jpg" alt="Bank QR Code" width="220">
+    <a href="https://wa.me/9779763266618" target="_blank">
+      <button class="button">Talk to Me Now on WhatsApp</button>
+    </a>
 
-</main>
+    <div class="qr-section">
+      <h2>Support My Time</h2>
+      <p>If you'd like to support me for listening or helping you, you can scan the QR code below:</p>
+      <img src="9f91d7d9-facb-4f76-83ff-5e43a4a67cc3.jpg" alt="Bank QR" width="220">
+    </div>
+  </main>
 
-<footer>
-  &copy; 2025 You Are Heard | Created by Krischal Marasini
-</footer>
+  <footer>
+    &copy; 2025 You Are Heard | Created by Krischal Marasini
+  </footer>
 
 </body>
 </html>
-added index.html
-Updated to show only Bank QR
